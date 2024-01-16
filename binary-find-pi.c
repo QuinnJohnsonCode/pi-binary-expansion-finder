@@ -111,6 +111,8 @@ unsigned long int find_position_in_pi(char bin[])
         char_count += BUFFER_SIZE; // Limits the amount of chars read to LIMIT
     }
 
+    fclose(file);
+
 
     // If we found it, let the user know the position to find
     if (found)
